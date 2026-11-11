@@ -80,6 +80,33 @@ STYLES = [
             {"file": "Irezumi Full Back.jpg",
              "caption": "A traditional full-back irezumi: the heroes Lu Zhishen and Shi Jin of the Suikoden. Tattoo work by Sujang.",
              "credit": "Photo via Wikimedia Commons"},
+            {"file": "Japan Tattoo 1890s.jpg",
+             "caption": "Tattooed man, Japan, 1890s.",
+             "credit": "Public domain"},
+            {"file": "Japanese Irezumi by Baron Stillfried.jpg",
+             "caption": "Portrait of a man with irezumi, Baron Raimund von Stillfried, 1870s.",
+             "credit": "Raimund von Stillfried — public domain"},
+            {"file": "Kusakabe Kimbei - 153. Japanese Tattoo.jpg",
+             "caption": "Japanese tattoo, albumen print by Kusakabe Kimbei.",
+             "credit": "Kusakabe Kimbei — public domain"},
+            {"file": "Espalda de hombre japonés tatuado.jpg",
+             "caption": "The back of a tattooed Japanese man.",
+             "credit": "Via Wikimedia Commons"},
+            {"file": "Japanese postman. Image from book of 1902.jpg",
+             "caption": "A tattooed Japanese postman, from a book of 1902.",
+             "credit": "Public domain"},
+            {"file": "Roshi Ensei lifting a heavy beam.jpg",
+             "caption": "Rōshi Ensei lifting a heavy beam — a tattooed Suikoden hero by Utagawa Kuniyoshi, c. 1827. Prints like this made the style.",
+             "credit": "Utagawa Kuniyoshi — public domain"},
+            {"file": "Senkaji Chao wringing out hin loincloth.jpg",
+             "caption": "Senkaji Chō, another of Kuniyoshi's tattooed Suikoden heroes.",
+             "credit": "Utagawa Kuniyoshi — public domain"},
+            {"file": "Marukin at Sanja Matsuri 3.jpg",
+             "caption": "Irezumi shown openly at the Sanja Matsuri festival, Tokyo.",
+             "credit": "Via Wikimedia Commons"},
+            {"file": "Irezumi, l'art japonais du tatouage.jpg",
+             "caption": "Irezumi — the Japanese art of tattooing.",
+             "credit": "Via Wikimedia Commons"},
         ],
     },
     {
@@ -136,6 +163,36 @@ STYLES = [
             {"file": "MaoriChief1784.jpg",
              "caption": "Portrait of a Māori man with full facial moko, after Sydney Parkinson, 1784.",
              "credit": "After Sydney Parkinson — public domain"},
+            {"file": "Hinepare.jpg",
+             "caption": "Hinepare of Ngāti Kahungunu, with moko kauae, by Gottfried Lindauer.",
+             "credit": "Gottfried Lindauer — public domain"},
+            {"file": "Eruera Maihi Patuone, by Gottfried Lindauer.jpg",
+             "caption": "Eruera Maihi Patuone, by Gottfried Lindauer.",
+             "credit": "Gottfried Lindauer — public domain"},
+            {"file": "Mrs Paramena, by Gottfried Lindauer.jpg",
+             "caption": "Mrs Paramena, wearing moko kauae, by Gottfried Lindauer.",
+             "credit": "Gottfried Lindauer — public domain"},
+            {"file": "Wiremu Kingi, by Gottfried Lindauer.jpg",
+             "caption": "Wiremu Kīngi of Te Āti Awa, by Gottfried Lindauer.",
+             "credit": "Gottfried Lindauer — public domain"},
+            {"file": "Maori chief, tattooed face, wearing dog-mat cape, green mere and earring, ca. 1870.jpg",
+             "caption": "A chief with full facial moko, photograph, c. 1870.",
+             "credit": "Public domain"},
+            {"file": "Tawhiao Maori King 1880s.jpg",
+             "caption": "King Tāwhiao, the second Māori King, 1880s.",
+             "credit": "Public domain"},
+            {"file": "Tā moko c1880.jpg",
+             "caption": "Tā moko, photograph, c. 1880.",
+             "credit": "Public domain"},
+            {"file": "Self-portrait by Te Pehi Kupe.png",
+             "caption": "Te Pēhi Kupe's self-portrait, 1826 — he drew his own moko from memory, without a mirror: proof it was known like a name.",
+             "credit": "Te Pēhi Kupe — public domain"},
+            {"file": "Māori traditional tattooing instrument with albatross bone blades.jpg",
+             "caption": "Uhi — traditional tattooing instruments with albatross-bone blades.",
+             "credit": "Via Wikimedia Commons"},
+            {"file": "MaoriMoko.png",
+             "caption": "The zones of the male facial moko, diagram.",
+             "credit": "Via Wikimedia Commons"},
         ],
     },
     {
@@ -186,6 +243,21 @@ STYLES = [
             {"file": "Traditional Samoan Tattoo - back.jpg",
              "caption": "A traditional Samoan pe'a, waist to below the knees, seen from behind.",
              "credit": "CloudSurfer — CC BY 3.0"},
+            {"file": "Samoan tatau - tattooing circa 1895 - photo Thomas Andrew.jpg",
+             "caption": "A tufuga tā tatau and his assistant at work with traditional tools, c. 1895. Photo: Thomas Andrew.",
+             "credit": "Thomas Andrew — public domain"},
+            {"file": "Back view Samoan male tatau - photo Thomas Andrew - 1890s.jpg",
+             "caption": "Back view of a Samoan pe'a, 1890s. Photo: Thomas Andrew.",
+             "credit": "Thomas Andrew — public domain"},
+            {"file": "Samoan Tattoo - front detail.jpg",
+             "caption": "Front detail of a pe'a.",
+             "credit": "CloudSurfer, via Wikimedia Commons"},
+            {"file": "Samoan Malu.jpg",
+             "caption": "A Samoan woman's malu — the open lacework of the thigh.",
+             "credit": "RunningToddler, via Wikimedia Commons"},
+            {"file": "Taber photo (S. Francisco) - Samoan warrior - n. 8294 - Copyright 1894.jpg",
+             "caption": "A Samoan warrior with pe'a, Taber photo, 1894.",
+             "credit": "Public domain (1894)"},
         ],
     },
     {
@@ -241,6 +313,30 @@ STYLES = [
             {"file": "Yant-tattoo.jpg",
              "caption": "A devotee of Wat Bang Phra covered in yant tattoos.",
              "credit": "Photo: Spencer Littlewood — public domain"},
+            {"file": "Yant Paed Tidt.jpg",
+             "caption": "Yant paed tidt — the eight-directions yant, protection wherever you travel.",
+             "credit": "Photo: Spencer Littlewood — public domain"},
+            {"file": "Yant-tattoos2.jpg",
+             "caption": "Yant tattoos across a back.",
+             "credit": "Via Wikimedia Commons"},
+            {"file": "Sak Yant Chiang Mai.jpg",
+             "caption": "Sak yant work in Chiang Mai.",
+             "credit": "Via Wikimedia Commons"},
+            {"file": "404 Sak Yant Tattoo (16).jpg",
+             "caption": "Sak yant, 2006.",
+             "credit": "Lychiang, via Wikimedia Commons"},
+            {"file": "420 Sak Yant Tattoo (32).jpg",
+             "caption": "Sak yant with khata script rows, 2006.",
+             "credit": "Lychiang, via Wikimedia Commons"},
+            {"file": "Thai tattoo Chiang Mai 2005 058.jpg",
+             "caption": "Traditional tattooing, Chiang Mai, 2005.",
+             "credit": "Via Wikimedia Commons"},
+            {"file": "Needles Wat Bang Phra.JPG",
+             "caption": "The khem sak rods at Wat Bang Phra monastery.",
+             "credit": "Via Wikimedia Commons"},
+            {"file": "Wat-bang-phra.jpg",
+             "caption": "Wat Bang Phra, the monastery of the tattoo festival.",
+             "credit": "Via Wikimedia Commons"},
         ],
     },
     {
@@ -297,6 +393,18 @@ STYLES = [
             {"file": "US Navy eagle tattoo in traditional style.jpg",
              "caption": "An eagle in traditional style, aboard USS Theodore Roosevelt.",
              "credit": "U.S. Navy — public domain"},
+            {"file": "Person's hand with tattoo of skull, anchor, and life preserver.jpg",
+             "caption": "Skull, anchor and life preserver on a sailor's hand.",
+             "credit": "U.S. Navy — public domain"},
+            {"file": "Man in uniform with rose tattoo on arm.jpg",
+             "caption": "A rose in traditional style on a sailor's arm.",
+             "credit": "U.S. Navy — public domain"},
+            {"file": "160517-N-XX333-001 (27147696875).jpg",
+             "caption": "Navy ink, photographed aboard USS Springfield, 2016.",
+             "credit": "U.S. Navy — public domain"},
+            {"file": "Sailor Jerry Ad (5189229064) (cropped).jpg",
+             "caption": "Sailor Jerry flash — swallows, ships and roses in the classic grammar.",
+             "credit": "Photo: Paul Sableman, via Wikimedia Commons"},
         ],
     },
     {
@@ -350,6 +458,33 @@ STYLES = [
             {"file": "Young Kalinga woman of Patiquian, Bontoc, showing arm tattoos (1906).png",
              "caption": "A young Kalinga woman showing arm tattoos, 1906.",
              "credit": "Public domain (1906)"},
+            {"file": "Whang-od and a recently tattooed visitor..jpg",
+             "caption": "Whang-od and a freshly tattooed visitor, Buscalan.",
+             "credit": "Via Wikimedia Commons"},
+            {"file": "Ink road (Apo Whang-od) 13.jpg",
+             "caption": "On the ink road to Buscalan: batok in progress.",
+             "credit": "Photo: Lee, via Wikimedia Commons"},
+            {"file": "Ink road (Apo Whang-od) 32.jpg",
+             "caption": "The thorn and the tapping stick at work.",
+             "credit": "Photo: Lee, via Wikimedia Commons"},
+            {"file": "Ink road (Apo Whang-od) 20.jpg",
+             "caption": "Soot ink, mixed from the cooking fire.",
+             "credit": "Photo: Lee, via Wikimedia Commons"},
+            {"file": "The Last Tattooed Woman of Kalinga.jpg",
+             "caption": "A tattooed elder of Kalinga.",
+             "credit": "Via Wikimedia Commons"},
+            {"file": "Lakay Wanawan - Kalinga people (c.1912).png",
+             "caption": "Lakay Wanawan of the Kalinga, with warrior's chest piece, c. 1912.",
+             "credit": "Public domain"},
+            {"file": "Tingian woman of Balbalasan, Bontoc, showing tattoos on forearms (1906).png",
+             "caption": "A Tingian woman showing forearm tattoos, 1906.",
+             "credit": "Public domain"},
+            {"file": "Isneg tattoos (1929).png",
+             "caption": "Isneg tattoo patterns, recorded 1929.",
+             "credit": "Public domain"},
+            {"file": "Arm tattoos of (37) Ibaloi woman; Northern Kalinga woman (38,39); and Northern Kalinga man (40).png",
+             "caption": "Arm tattoos of Ibaloi and Kalinga women and men, recorded 1929.",
+             "credit": "Public domain"},
         ],
     },
     {
@@ -406,6 +541,27 @@ STYLES = [
             {"file": "Tatouages amazigh.jpg",
              "caption": "Amazigh tattoo designs of Algeria and Tunisia, recorded by E.-G. Gobert, 1924.",
              "credit": "E.-G. Gobert, via Wikimedia Commons"},
+            {"file": "COLLECTIE TROPENMUSEUM Berbervrouw uit de Midden Atlas TMnr 10028644.jpg",
+             "caption": "Amazigh woman of the Middle Atlas, Morocco.",
+             "credit": "Collectie Wereldmuseum (Tropenmuseum) — CC BY-SA 3.0"},
+            {"file": "COLLECTIE TROPENMUSEUM Tunesische Berbervrouw. TMnr 60032650.jpg",
+             "caption": "Tunisian Amazigh woman with facial tattoos.",
+             "credit": "Collectie Wereldmuseum (Tropenmuseum) — CC BY-SA 3.0"},
+            {"file": "COLLECTIE TROPENMUSEUM Berberse tapijtknoopster uit Zemmour TMnr 10028617.jpg",
+             "caption": "A carpet-knotter of Zemmour — the same diamonds in wool and on skin.",
+             "credit": "Collectie Wereldmuseum (Tropenmuseum) — CC BY-SA 3.0"},
+            {"file": "A Bedouin woman Tunis Tunisia.jpg",
+             "caption": "A Bedouin woman of Tunis with chin and brow marks, photochrom, c. 1899.",
+             "credit": "Public domain"},
+            {"file": "Abb. 317. Berberin aus südlichen Algier.jpg",
+             "caption": "Amazigh woman of southern Algeria, early photograph.",
+             "credit": "Public domain"},
+            {"file": "A Tattooed Girl. (1836) - TIMEA.jpg",
+             "caption": "'A tattooed girl', engraving, 1836.",
+             "credit": "Public domain"},
+            {"file": "Kabylenweib.jpg",
+             "caption": "A Kabyle woman, historical photograph.",
+             "credit": "Public domain"},
         ],
     },
     {
@@ -459,6 +615,18 @@ STYLES = [
             {"file": "Dayak Types, Borneo.jpg",
              "caption": "Three Dayak men, engraving, Popular Science, 1890.",
              "credit": "Popular Science, 1890 — public domain"},
+            {"file": "COLLECTIE TROPENMUSEUM Het aanbrengen van een tatoeage door een Dajak West-Borneo. TMnr 60031303.jpg",
+             "caption": "Applying a tattoo by hand-tap, West Borneo.",
+             "credit": "Collectie Wereldmuseum (Tropenmuseum) — CC BY-SA 3.0"},
+            {"file": "COLLECTIE TROPENMUSEUM Portret van een getatoeëerde Ot Danum Dajak man uit het Kahajan gebied van Midden-Borneo. TMnr 60046429.jpg",
+             "caption": "A tattooed Ot Danum Dayak man of the Kahayan region, Central Borneo.",
+             "credit": "Collectie Wereldmuseum (Tropenmuseum) — CC BY-SA 3.0"},
+            {"file": "COLLECTIE TROPENMUSEUM Tatoeëring van de handrug van een Dajak meisje Borneo TMnr 60051448.jpg",
+             "caption": "Tattooing the back of a Dayak girl's hand, Borneo.",
+             "credit": "Collectie Wereldmuseum (Tropenmuseum) — CC BY-SA 3.0"},
+            {"file": "COLLECTIE TROPENMUSEUM Portret van een Boekat Dajak meisje Borneo. TMnr 60045280.jpg",
+             "caption": "A Bukat Dayak girl, Borneo.",
+             "credit": "Collectie Wereldmuseum (Tropenmuseum) — CC BY-SA 3.0"},
         ],
     },
     {
@@ -510,6 +678,21 @@ STYLES = [
             {"file": "TatouageAinou.png",
              "caption": "Ainu tattooing of the mouth and hands, historical illustration.",
              "credit": "Via Wikimedia Commons — public domain"},
+            {"file": "Ainuschönheit (Sammlung Bälz).jpg",
+             "caption": "An Ainu woman with sinuye, from the Bälz collection.",
+             "credit": "Public domain"},
+            {"file": "Ainu-woman-1930-2.jpg",
+             "caption": "Ainu woman with mouth tattoo, 1930.",
+             "credit": "Public domain"},
+            {"file": "Tamoto Kenzō - Ainu Women.jpg",
+             "caption": "Ainu women, photograph by Tamoto Kenzō, Meiji era.",
+             "credit": "Tamoto Kenzō — public domain"},
+            {"file": "HirasawaByozanFemme.png",
+             "caption": "An Ainu woman, painting by Hirasawa Byōzan.",
+             "credit": "Hirasawa Byōzan — public domain"},
+            {"file": "Ainu woman (from a book Published in 1931) P.81.png",
+             "caption": "Ainu woman with full mouth tattoo and hand marks, 1931.",
+             "credit": "Public domain"},
         ],
     },
     {
@@ -565,6 +748,9 @@ STYLES = [
             {"file": "Russian Criminal Tattoo - Epaulette.png",
              "caption": "An epaulette tattoo — the mark of criminal 'officer class'.",
              "credit": "Yeghishedaviti — CC BY-SA 4.0"},
+            {"file": "Jewish Russian Criminal Tattoo.jpg",
+             "caption": "A prison tattoo recorded by Danzig Baldaev for his encyclopaedia of the genre.",
+             "credit": "Danzig Baldaev, via Wikimedia Commons"},
         ],
     },
 ]
@@ -658,6 +844,25 @@ nav.crumbs a{text-decoration:none;font-family:"IM Fell English SC",serif;font-si
 .card-blurb{font-size:.98rem;font-style:italic;color:var(--ink-soft);line-height:1.45}
 .card .corner{position:absolute;width:9px;height:9px;background:var(--oxblood);transform:rotate(45deg)}
 .card .c1{top:-5px;left:-5px}.card .c2{top:-5px;right:-5px}.card .c3{bottom:-5px;left:-5px}.card .c4{bottom:-5px;right:-5px}
+.grid .card:nth-child(even){transform:rotate(.6deg)}
+.grid .card:nth-child(3n){transform:rotate(-.7deg)}
+.grid .card:hover{transform:rotate(0)}
+
+/* photo frieze under the hero */
+.frieze{display:flex;justify-content:center;align-items:center;gap:0;padding:18px 10px 8px;overflow:hidden}
+.frieze .shot{flex:0 1 150px;min-width:0;background:var(--paper-deep);border:3px solid var(--ink);padding:7px;
+  box-shadow:0 0 0 1px var(--paper),0 0 0 2px var(--ink),5px 6px 0 rgba(36,27,18,.3)}
+.frieze .shot img{width:100%;aspect-ratio:3/4;object-fit:cover;border:2px solid var(--ink);
+  filter:sepia(.4) saturate(.7) contrast(1.05)}
+.frieze .shot:nth-child(1){transform:rotate(-3deg) translateY(8px)}
+.frieze .shot:nth-child(2){transform:rotate(2deg)}
+.frieze .shot:nth-child(3){transform:rotate(-1.5deg) translateY(-6px);flex-basis:170px}
+.frieze .shot:nth-child(4){transform:rotate(1deg) translateY(6px)}
+.frieze .shot:nth-child(5){transform:rotate(3deg)}
+.frieze .shot:nth-child(6){transform:rotate(-2deg) translateY(10px)}
+.frieze .shot:nth-child(7){transform:rotate(1.8deg) translateY(-4px)}
+@media(max-width:860px){.frieze .shot:nth-child(n+5){display:none}}
+@media(max-width:560px){.frieze .shot:nth-child(n+4){display:none}}
 
 /* style page */
 .poster{border-bottom:var(--frame);text-align:center;padding:46px 20px 30px}
@@ -683,12 +888,22 @@ aside.notes dd{margin:0}
 .motifs ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px}
 .motifs li{border:1.5px solid var(--ink-soft);padding:1px 9px;font-size:.9rem;font-style:italic;background:var(--paper)}
 
-/* gallery */
+/* gallery — masonry of pinned plates */
 .gallery{padding:26px 0 56px}
-.gallery h2{text-align:center;font-family:"Rye",serif;font-weight:400;font-size:1.6rem;margin-bottom:28px}
-.plates{display:flex;flex-wrap:wrap;gap:34px;justify-content:center}
-figure.plate{width:min(330px,100%);background:var(--paper-deep);border:var(--frame);padding:12px;
+.gallery h2{text-align:center;font-family:"Rye",serif;font-weight:400;font-size:1.6rem;margin-bottom:6px}
+.gallery .count{text-align:center;font-style:italic;color:var(--ink-soft);margin-bottom:30px}
+.plates{columns:3 300px;column-gap:34px}
+figure.plate{width:100%;margin:0 0 34px;break-inside:avoid;background:var(--paper-deep);border:var(--frame);padding:12px;
   box-shadow:0 0 0 1px var(--paper),0 0 0 2px var(--ink),6px 7px 0 rgba(36,27,18,.28)}
+figure.plate:nth-child(3n+1){transform:rotate(-1deg)}
+figure.plate:nth-child(3n+2){transform:rotate(.7deg)}
+figure.plate:nth-child(5n){transform:rotate(1.3deg)}
+figure.plate::before{content:"";display:block;width:12px;height:12px;border-radius:50%;
+  background:var(--oxblood);box-shadow:inset -2px -2px 2px rgba(0,0,0,.35);margin:-4px auto 8px}
+/* lead plate on style pages */
+.lead-plate{display:flex;justify-content:center;padding:36px 20px 0}
+.lead-plate figure.plate{width:min(560px,100%);margin:0;transform:rotate(-.6deg)}
+.lead-plate figure.plate img{max-height:72vh;object-fit:cover;width:100%}
 figure.plate img{border:2px solid var(--ink);width:100%;height:auto;filter:sepia(.3) saturate(.8) contrast(1.04);background:var(--paper-dark)}
 figure.plate figcaption{margin-top:10px;font-size:.92rem;line-height:1.45}
 figure.plate .credit{display:block;margin-top:6px;font-family:"IM Fell English SC",serif;font-size:.85rem;color:var(--ink-soft)}
@@ -768,6 +983,14 @@ def build_index() -> str:
 <span class="card-name">{s['name']}</span>
 <span class="card-blurb">{s['card']}</span>
 </a>""")
+    total = sum(len(s["images"]) for s in STYLES)
+    frieze_picks = []
+    for s in STYLES:
+        if len(s["images"]) > 1:
+            frieze_picks.append(s["images"][1])
+    frieze = "".join(
+        f'<span class="shot"><img src="{commons(img["file"], 360)}" alt="" loading="lazy"></span>'
+        for img in frieze_picks[:7])
     page = HEAD.format(title=SITE, root="",
                        desc="An illustrated atlas of the world's tattoo traditions — from Japanese irezumi to Samoan tatau.")
     page += masthead("")
@@ -779,10 +1002,13 @@ def build_index() -> str:
 flash sheets of American ports — their tools, their meanings, and the people who keep them.</p>
 <span class="est">Ink on skin since c. 3300 BC</span>
 </section>
+<div class="frieze" aria-hidden="true">
+{frieze}
+</div>
 {DIVIDER}
 <section class="sheet wrap" id="sheet">
 <h2 class="sheet-title">The Flash Sheet</h2>
-<p class="sheet-note">Pick a design off the wall — every tradition opens into its own story.</p>
+<p class="sheet-note">Ten traditions, {total} plates from the archive — pick a design off the wall, every one opens into its own story.</p>
 <div class="grid">
 {''.join(cards)}
 </div>
@@ -798,7 +1024,10 @@ def build_style(i: int, s: dict) -> str:
     facts = "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in s["facts"])
     motifs = "".join(f"<li>{m}</li>" for m in s["motifs"])
     body = "".join(f"<p>{p}</p>" for p in s["paragraphs"])
-    plates = "".join(fig(img) for img in s["images"])
+    lead = fig(s["images"][0], 1100)
+    rest = s["images"][1:] if len(s["images"]) > 1 else s["images"]
+    plates = "".join(fig(img) for img in rest)
+    n_plates = len(s["images"])
     page = HEAD.format(title=f"{s['name']} — {s['region']} · {SITE}", root="../",
                        desc=html.escape(s["card"]))
     page += masthead("../")
@@ -808,6 +1037,7 @@ def build_style(i: int, s: dict) -> str:
 <p class="native">{s['native']}</p>
 <p class="lede">{s['lede']}</p>
 </section>
+<div class="lead-plate wrap">{lead}</div>
 <div class="wrap">
 <div class="article">
 <div class="body">{body}</div>
@@ -821,6 +1051,7 @@ def build_style(i: int, s: dict) -> str:
 {DIVIDER}
 <section class="gallery wrap">
 <h2>Plates</h2>
+<p class="count">{n_plates} plates in this folder — each links to its source and licence.</p>
 <div class="plates">{plates}</div>
 </section>
 <div class="wrap">

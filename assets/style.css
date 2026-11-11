@@ -80,6 +80,25 @@ nav.crumbs a{text-decoration:none;font-family:"IM Fell English SC",serif;font-si
 .card-blurb{font-size:.98rem;font-style:italic;color:var(--ink-soft);line-height:1.45}
 .card .corner{position:absolute;width:9px;height:9px;background:var(--oxblood);transform:rotate(45deg)}
 .card .c1{top:-5px;left:-5px}.card .c2{top:-5px;right:-5px}.card .c3{bottom:-5px;left:-5px}.card .c4{bottom:-5px;right:-5px}
+.grid .card:nth-child(even){transform:rotate(.6deg)}
+.grid .card:nth-child(3n){transform:rotate(-.7deg)}
+.grid .card:hover{transform:rotate(0)}
+
+/* photo frieze under the hero */
+.frieze{display:flex;justify-content:center;align-items:center;gap:0;padding:18px 10px 8px;overflow:hidden}
+.frieze .shot{flex:0 1 150px;min-width:0;background:var(--paper-deep);border:3px solid var(--ink);padding:7px;
+  box-shadow:0 0 0 1px var(--paper),0 0 0 2px var(--ink),5px 6px 0 rgba(36,27,18,.3)}
+.frieze .shot img{width:100%;aspect-ratio:3/4;object-fit:cover;border:2px solid var(--ink);
+  filter:sepia(.4) saturate(.7) contrast(1.05)}
+.frieze .shot:nth-child(1){transform:rotate(-3deg) translateY(8px)}
+.frieze .shot:nth-child(2){transform:rotate(2deg)}
+.frieze .shot:nth-child(3){transform:rotate(-1.5deg) translateY(-6px);flex-basis:170px}
+.frieze .shot:nth-child(4){transform:rotate(1deg) translateY(6px)}
+.frieze .shot:nth-child(5){transform:rotate(3deg)}
+.frieze .shot:nth-child(6){transform:rotate(-2deg) translateY(10px)}
+.frieze .shot:nth-child(7){transform:rotate(1.8deg) translateY(-4px)}
+@media(max-width:860px){.frieze .shot:nth-child(n+5){display:none}}
+@media(max-width:560px){.frieze .shot:nth-child(n+4){display:none}}
 
 /* style page */
 .poster{border-bottom:var(--frame);text-align:center;padding:46px 20px 30px}
@@ -105,12 +124,22 @@ aside.notes dd{margin:0}
 .motifs ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px}
 .motifs li{border:1.5px solid var(--ink-soft);padding:1px 9px;font-size:.9rem;font-style:italic;background:var(--paper)}
 
-/* gallery */
+/* gallery — masonry of pinned plates */
 .gallery{padding:26px 0 56px}
-.gallery h2{text-align:center;font-family:"Rye",serif;font-weight:400;font-size:1.6rem;margin-bottom:28px}
-.plates{display:flex;flex-wrap:wrap;gap:34px;justify-content:center}
-figure.plate{width:min(330px,100%);background:var(--paper-deep);border:var(--frame);padding:12px;
+.gallery h2{text-align:center;font-family:"Rye",serif;font-weight:400;font-size:1.6rem;margin-bottom:6px}
+.gallery .count{text-align:center;font-style:italic;color:var(--ink-soft);margin-bottom:30px}
+.plates{columns:3 300px;column-gap:34px}
+figure.plate{width:100%;margin:0 0 34px;break-inside:avoid;background:var(--paper-deep);border:var(--frame);padding:12px;
   box-shadow:0 0 0 1px var(--paper),0 0 0 2px var(--ink),6px 7px 0 rgba(36,27,18,.28)}
+figure.plate:nth-child(3n+1){transform:rotate(-1deg)}
+figure.plate:nth-child(3n+2){transform:rotate(.7deg)}
+figure.plate:nth-child(5n){transform:rotate(1.3deg)}
+figure.plate::before{content:"";display:block;width:12px;height:12px;border-radius:50%;
+  background:var(--oxblood);box-shadow:inset -2px -2px 2px rgba(0,0,0,.35);margin:-4px auto 8px}
+/* lead plate on style pages */
+.lead-plate{display:flex;justify-content:center;padding:36px 20px 0}
+.lead-plate figure.plate{width:min(560px,100%);margin:0;transform:rotate(-.6deg)}
+.lead-plate figure.plate img{max-height:72vh;object-fit:cover;width:100%}
 figure.plate img{border:2px solid var(--ink);width:100%;height:auto;filter:sepia(.3) saturate(.8) contrast(1.04);background:var(--paper-dark)}
 figure.plate figcaption{margin-top:10px;font-size:.92rem;line-height:1.45}
 figure.plate .credit{display:block;margin-top:6px;font-family:"IM Fell English SC",serif;font-size:.85rem;color:var(--ink-soft)}
