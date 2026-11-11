@@ -1024,20 +1024,20 @@ STYLES = [
 # Pin positions (percent x, y) on the world chart, keyed by slug.
 # Base map: Wikimedia Commons BlankMap-World.svg. Tune by eye.
 MAP_PINS = {
-    "japan": (88.9, 36.0),
-    "new-zealand": (97.5, 87.0),
+    "japan": (90.3, 33.0),
+    "new-zealand": (96.2, 84.5),
     "samoa": (3.0, 69.0),
     "marquesas": (11.3, 66.0),
-    "thailand": (77.9, 50.5),
-    "myanmar": (76.0, 45.5),
-    "usa": (29.4, 33.0),
-    "philippines": (83.6, 48.5),
-    "taiwan": (83.6, 44.0),
-    "north-africa": (48.0, 39.5),
-    "borneo": (81.7, 59.0),
-    "ainu": (89.7, 31.5),
+    "thailand": (79.3, 48.5),
+    "myanmar": (78.0, 44.0),
+    "usa": (28.8, 33.0),
+    "philippines": (86.2, 46.5),
+    "taiwan": (85.3, 39.5),
+    "north-africa": (43.5, 34.0),
+    "borneo": (83.2, 54.5),
+    "ainu": (91.2, 28.8),
     "arctic": (24.2, 14.0),
-    "russia": (62.2, 23.0),
+    "russia": (59.5, 17.0),
 }
 
 TIMELINE = [
