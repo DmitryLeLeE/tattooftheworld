@@ -11,6 +11,7 @@ import urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "Tattoo of the World"
+VERSION = "2"  # bump when assets/style.css changes, to bust browser caches
 
 
 def commons(filename: str, width: int = 1000) -> str:
@@ -937,7 +938,7 @@ HEAD = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rye&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{root}assets/style.css">
+<link rel="stylesheet" href="{root}assets/style.css?v={v}">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23e8dbba'/%3E%3Cpath d='M16 4 L19 13 L28 16 L19 19 L16 28 L13 19 L4 16 L13 13 Z' fill='%238c2f26'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -991,7 +992,7 @@ def build_index() -> str:
     frieze = "".join(
         f'<span class="shot"><img src="{commons(img["file"], 360)}" alt="" loading="lazy"></span>'
         for img in frieze_picks[:7])
-    page = HEAD.format(title=SITE, root="",
+    page = HEAD.format(title=SITE, root="", v=VERSION,
                        desc="An illustrated atlas of the world's tattoo traditions — from Japanese irezumi to Samoan tatau.")
     page += masthead("")
     page += f"""<section class="hero">
@@ -1028,7 +1029,7 @@ def build_style(i: int, s: dict) -> str:
     rest = s["images"][1:] if len(s["images"]) > 1 else s["images"]
     plates = "".join(fig(img) for img in rest)
     n_plates = len(s["images"])
-    page = HEAD.format(title=f"{s['name']} — {s['region']} · {SITE}", root="../",
+    page = HEAD.format(title=f"{s['name']} — {s['region']} · {SITE}", root="../", v=VERSION,
                        desc=html.escape(s["card"]))
     page += masthead("../")
     page += f"""<section class="poster">
@@ -1072,7 +1073,7 @@ def build_about() -> str:
             img_items.append(
                 f"<li><a href=\"{commons_page(img['file'])}\">{img['file']}</a> — {img['credit']} "
                 f"(used on <a href=\"styles/{s['slug']}.html\">{s['name']}</a>)</li>")
-    page = HEAD.format(title=f"About & credits · {SITE}", root="",
+    page = HEAD.format(title=f"About & credits · {SITE}", root="", v=VERSION,
                        desc="About the project, image credits and licences.")
     page += masthead("")
     page += f"""<section class="poster">
