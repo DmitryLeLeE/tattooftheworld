@@ -11,7 +11,7 @@ import urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "Tattoo of the World"
-VERSION = "2"  # bump when assets/style.css changes, to bust browser caches
+VERSION = "3"  # bump when assets/style.css changes, to bust browser caches
 
 
 def commons(filename: str, width: int = 1000) -> str:
@@ -262,6 +262,77 @@ STYLES = [
         ],
     },
     {
+        "slug": "marquesas",
+        "region": "Marquesas Islands",
+        "name": "Enata Patterns",
+        "native": "patu tiki · te patutiki",
+        "card": "The densest tattooing the world has known — warriors inked from scalp to sole.",
+        "lede": ("When Europeans first anchored off the Marquesas, they met men tattooed "
+                 "over every inch of skin, eyelids included — the most complete body "
+                 "writing any culture has produced."),
+        "paragraphs": [
+            ("The Marquesas — Te Henua 'Enana, the Land of Men — pushed Polynesian "
+             "tattooing to its absolute limit. Where Samoa stopped at the knees, the "
+             "Marquesan ideal was total coverage: a chief in his sixties might be "
+             "blue-black from scalp to sole, the designs layered over decades until "
+             "the earliest work disappeared under the latest. The practice is called "
+             "<em>patu tiki</em> — 'striking images'."),
+            ("The vocabulary is geometric and dense: <em>etua</em> figures of gods "
+             "and ancestors, <em>ipu</em> containers, checkerboards, eye motifs "
+             "(<em>mata</em>) that watch in all directions, and the stylised faces "
+             "of tiki. Each motif is a word; a covered body is a biography, a "
+             "genealogy and a shield of <em>mana</em> at once. Russian and French "
+             "expedition artists of the early 1800s — Tilesius, Radiguet — drew the "
+             "warriors of Nuku Hiva in astonished detail, and those plates remain "
+             "the style's best record."),
+            ("Tattooing here was wrapped in tapu: sessions in special houses, "
+             "feasting obligations on the family, first tattoos marking a young "
+             "man's entry into the warrior age-grade. Women wore finer work — "
+             "hands, lips, ears, shoulders — gloves of pattern that marked rank "
+             "and the right to prepare food for the tapu class."),
+            ("French colonial law banned tattooing in 1858, and missionary pressure "
+             "had nearly ended it already; within two generations full-body patu "
+             "tiki was gone. Its revival since the 1980s runs on the old plates: "
+             "the German ethnographer Karl von den Steinen's three-volume record "
+             "(1925) became the unlikely pattern book from which Marquesan artists "
+             "re-learned their own grammar. Today patu tiki again marks Marquesan "
+             "identity across French Polynesia — and the 2024 inscription of the "
+             "islands on the UNESCO World Heritage list cited the living art among "
+             "their treasures."),
+        ],
+        "facts": [
+            ("Where", "Te Henua 'Enana — Marquesas, French Polynesia"),
+            ("Form", "Patu tiki — toward total body coverage"),
+            ("Recorded by", "Tilesius (1804), von den Steinen (1925)"),
+            ("Banned", "French decree, 1858"),
+            ("Revived", "From the old plates, 1980s onward"),
+        ],
+        "motifs": ["etua god-figure", "mata eyes", "tiki face", "checkerboards", "ipu bands"],
+        "images": [
+            {"file": "Nuku Hiva Warrior2.jpg",
+             "caption": "A tattooed warrior of Nuku Hiva, engraving after Tilesius, 1813.",
+             "credit": "W. G. Tilesius von Tilenau — public domain"},
+            {"file": "Tattooed native of the Marquesas Islands.jpg",
+             "caption": "Tattooed Marquesan warrior, 1880.",
+             "credit": "Atelier Hoare, 1880 — public domain"},
+            {"file": "AlterKrieger-K.v.d.Steinen.jpg",
+             "caption": "An old warrior, from Karl von den Steinen's record of Marquesan tattooing.",
+             "credit": "Karl von den Steinen — public domain"},
+            {"file": "K.v.d.Steinen, Marquesaner Bd1 p146 Abb.90-92 - Tatoos from Marquesas Islands.jpg",
+             "caption": "Marquesan tattoo patterns, plates from von den Steinen, 1925.",
+             "credit": "Karl von den Steinen — public domain"},
+            {"file": "Mouina, Chief warrior of the Tayehs Wellcome L0040399.jpg",
+             "caption": "Mouina, chief warrior of the Taioha'e, early engraving.",
+             "credit": "Wellcome Collection, via Wikimedia Commons"},
+            {"file": "PSM V37 D632 Tattooed native of the marquesas islands.jpg",
+             "caption": "Tattooed Marquesan, Popular Science Monthly, 1890.",
+             "credit": "Public domain"},
+            {"file": "Nuku Hiva warrior 1813.jpg",
+             "caption": "Nuku Hiva warrior with spear, 1813.",
+             "credit": "Public domain"},
+        ],
+    },
+    {
         "slug": "thailand",
         "region": "Thailand",
         "name": "Sak Yant",
@@ -338,6 +409,66 @@ STYLES = [
             {"file": "Wat-bang-phra.jpg",
              "caption": "Wat Bang Phra, the monastery of the tattoo festival.",
              "credit": "Via Wikimedia Commons"},
+        ],
+    },
+    {
+        "slug": "myanmar",
+        "region": "Myanmar",
+        "name": "Chin Face Tattoos",
+        "native": "Chin State · Laytu, M'uun, Dai & other Chin peoples",
+        "card": "Spiderweb lines across women's faces in the hills of Chin State — a vanishing signature.",
+        "lede": ("In the hills along the Lemro river, Chin women wore their valley's "
+                 "signature on their faces — webs, dots and lines that told, at a glance, "
+                 "exactly where a woman was from."),
+        "paragraphs": [
+            ("The Chin peoples of western Myanmar — Laytu, M'uun, Dai, Yindu, Uppriu "
+             "and others — tattooed women's faces for centuries, each group in its "
+             "own unmistakable pattern: a full web of fine lines covering the whole "
+             "face; rows of dots like seeds; bold loops on the cheeks; some groups "
+             "inked the eyelids and throat. The pattern was a passport in reverse — "
+             "it named your valley, your people, your dialect."),
+            ("The usual legend says the practice began as protection: a Burmese "
+             "king, the story goes, took the prettiest Chin girls, and mothers "
+             "began tattooing their daughters to make them undesirable to raiders. "
+             "Scholars doubt the tale — the same marks read locally as beauty, "
+             "maturity and belonging, and girls asked for them. Both things are "
+             "true of most facial tattoo traditions: a mark against outsiders, a "
+             "beauty among one's own."),
+            ("The work was done by specialist women with thorn needles and soot "
+             "mixed with buffalo bile and plant juice, over sessions a girl "
+             "endured between the ages of about twelve and sixteen. A full M'uun "
+             "web could take a day of continuous work and weeks of painful "
+             "healing — faces swell; some women recalled being unable to eat for "
+             "days."),
+            ("Burma's socialist government banned the practice in the 1960s, and "
+             "Christian conversion in the hills discouraged it further; women "
+             "tattooed after that are rare. The tattooed grandmothers of the Lemro "
+             "valley became, in the 2010s, one of Myanmar's most photographed "
+             "sights — an uneasy economy of portraiture that at least records the "
+             "faces. The youngest fully tattooed women are now old, and with them "
+             "the valley signatures will go."),
+        ],
+        "facts": [
+            ("Where", "Chin State, western Myanmar"),
+            ("Worn by", "Women, tattooed in adolescence"),
+            ("Patterns", "Web, dot-field, loop — one per people"),
+            ("Ink", "Soot, buffalo bile, plant juice"),
+            ("Banned", "1960s, under the socialist government"),
+        ],
+        "motifs": ["full-face web (M'uun)", "dot rows (Dai)", "cheek loops", "eyelid marks"],
+        "images": [
+            {"file": "Chin women with face tattoos (7479947494).jpg",
+             "caption": "Two Chin women with spiderweb facial tattoos, Lemro river valley, 2012.",
+             "credit": "Daniel Julie — CC BY 2.0"},
+            {"file": "IMG3902 Burma Chin State Village and Mother Traditional Tattooed (7864251600).jpg",
+             "caption": "A tattooed mother in a Chin village, 2012.",
+             "credit": "Daniel Julie — CC BY 2.0"},
+            {"file": "DSC0176BurmaChin PeopleWomen Tattooed's face.jpg",
+             "caption": "Chin women with tattooed faces.",
+             "credit": "Daniel Julie — CC BY 2.0"},
+            {"file": "DSC00013 Burma Chin Village Women Tattooed in the Marriage Célébration (7479947286).jpg",
+             "caption": "Tattooed women at a marriage celebration, Chin State.",
+             "credit": "Daniel Julie — CC BY 2.0"},
         ],
     },
     {
@@ -486,6 +617,72 @@ STYLES = [
             {"file": "Arm tattoos of (37) Ibaloi woman; Northern Kalinga woman (38,39); and Northern Kalinga man (40).png",
              "caption": "Arm tattoos of Ibaloi and Kalinga women and men, recorded 1929.",
              "credit": "Public domain"},
+        ],
+    },
+    {
+        "slug": "taiwan",
+        "region": "Taiwan",
+        "name": "Atayal Ptasan",
+        "native": "ptasan · 紋面 · Atayal, Seediq, Truku",
+        "card": "The facial marks a man earned by courage and a woman by mastery of the loom.",
+        "lede": ("Among the Atayal of Taiwan's mountains, the face tattoo was a diploma: "
+                 "no man received his without proving courage, no woman hers without "
+                 "mastering the loom — and without it, no marriage."),
+        "paragraphs": [
+            ("The Atayal, Seediq and Truku peoples of Taiwan's central mountains "
+             "practised <em>ptasan</em>, facial tattooing, as the mark of full "
+             "adulthood. A boy earned the vertical chin stripe traditionally by "
+             "taking an enemy head or otherwise proving himself in defence of the "
+             "community; a girl earned the broad cheek bands — sweeping from the "
+             "ears to the lips — by weaving cloth fine enough to satisfy her "
+             "elders. Both sexes received a forehead mark in childhood."),
+            ("The marks were a visa for the afterlife. Ancestral spirits waiting "
+             "at the rainbow bridge, <em>hongu utux</em>, examined the faces of "
+             "the dead: the properly tattooed crossed to the ancestors, the "
+             "unmarked could not. A face without ptasan was not just unmarriageable "
+             "— it was unrecognisable to one's own dead."),
+            ("Tattooists were women, paid specialists who tapped soot into the "
+             "skin with needle combs and a striking stick — the design pricked "
+             "deep enough that a full set of women's cheek bands took a day and "
+             "healed over a month, during which the girl ate through a wooden "
+             "mouthpiece."),
+            ("The Japanese colonial government outlawed ptasan in 1913 as part of "
+             "its campaign against indigenous custom (it banned the headhunting "
+             "that fed the men's tattoo in the same stroke), and enforced the ban "
+             "with fines and forced removal. The last tattooed generation grew "
+             "old through the twentieth century; the final fully tattooed Atayal "
+             "elders died in the 2010s. Today the patterns live on in revival "
+             "ceremonies, museum work by descendants, and — a familiar story "
+             "across this atlas — in young people re-inking the old lines by "
+             "choice."),
+        ],
+        "facts": [
+            ("Peoples", "Atayal, Seediq, Truku — Taiwan highlands"),
+            ("Men's mark", "Chin stripe, earned by courage"),
+            ("Women's mark", "Cheek bands, earned at the loom"),
+            ("Belief", "Tattooed faces cross the rainbow bridge"),
+            ("Banned", "1913, by the Japanese administration"),
+        ],
+        "motifs": ["forehead bar", "chin stripe", "cheek bands", "weaving lozenges"],
+        "images": [
+            {"file": "Atayal.jpg",
+             "caption": "An Atayal woman with full ptasan cheek bands, photographed by Torii Ryūzō, c. 1900.",
+             "credit": "Torii Ryūzō — public domain"},
+            {"file": "Atayal people, Taiwan 1900 (No.7441).jpg",
+             "caption": "A young Atayal couple with facial tattoos, Taiwan, 1900.",
+             "credit": "Torii Ryūzō — public domain"},
+            {"file": "鳥居龍藏所攝紋面泰雅族女人.jpg",
+             "caption": "Tattooed Atayal woman, photograph by Torii Ryūzō.",
+             "credit": "Torii Ryūzō — public domain"},
+            {"file": "Truku lady circa 1930.jpg",
+             "caption": "A Truku woman with facial tattoo, c. 1930.",
+             "credit": "Public domain"},
+            {"file": "Two elder Atayal women.jpg",
+             "caption": "Two elder Atayal women with ptasan.",
+             "credit": "Via Wikimedia Commons"},
+            {"file": "Common Face tattoos among the aborigines in Taiwan.jpg",
+             "caption": "Common facial tattoo patterns among Taiwan's indigenous peoples, chart.",
+             "credit": "Via Wikimedia Commons"},
         ],
     },
     {
@@ -697,6 +894,74 @@ STYLES = [
         ],
     },
     {
+        "slug": "arctic",
+        "region": "The Arctic",
+        "name": "Kakiniit",
+        "native": "ᑲᑭᓐᓃᑦ · Inuit women's tattoos",
+        "card": "Chin lines stitched with sinew and soot under the northern lights — now returning.",
+        "lede": ("Across the top of the world, from Siberia to Greenland, Inuit women "
+                 "wore tattoos stitched into the skin — thread, soot and a lifetime of "
+                 "meaning, sewn line by line."),
+        "paragraphs": [
+            ("Arctic tattooing is ancient and, uniquely, sewn. In skin-stitching, "
+             "a needle draws a sinew thread blackened with soot or lamp-black "
+             "through the skin, leaving a dotted line that heals solid; hand-poking "
+             "filled in the rest. The oldest known tattooed skin in the Americas — "
+             "a 1,600-year-old mummy from Saint Lawrence Island — carries exactly "
+             "the patterns photographed on living women there in 1900."),
+            ("The marks — <em>kakiniit</em>; the facial ones <em>tunniit</em> — "
+             "were women's writing. Chin stripes received at first menstruation "
+             "announced adulthood; cheek and brow marks, and the dense forearm "
+             "and thigh patterns, recorded marriages, children, skills, and "
+             "beauty. A woman's tattoos were her credentials in this world and "
+             "the next: in some traditions only properly tattooed women passed "
+             "fully into the land of the dead."),
+            ("A 1654 Dutch painting of four Inuit from Greenland — the earliest "
+             "European portrait of Inuit people — already shows the chin lines. "
+             "Then came the missionaries, for whom the marks were heathen: across "
+             "the twentieth century tattooing was shamed and preached nearly out "
+             "of existence, and by the 1980s only a few tattooed elders remained."),
+            ("The return began with their granddaughters. Inuit filmmaker Alethea "
+             "Arnaquq-Baril's documentary <em>Tunniit</em> (2010) and the Inuit "
+             "Tattoo Revitalization Project led by Hovak Johnston brought "
+             "skin-stitching back as living practice: today hundreds of Inuit "
+             "women across Alaska, Canada and Greenland wear new kakiniit, sewn "
+             "the old way, often by artists who learned specifically to give "
+             "their communities the marks the church took."),
+        ],
+        "facts": [
+            ("Where", "Siberia, Alaska, Canada, Greenland"),
+            ("Technique", "Skin-stitching with soot-blackened sinew"),
+            ("Oldest proof", "Tattooed mummy, c. 400 AD, St Lawrence Is."),
+            ("Suppressed", "By missionaries, 20th century"),
+            ("Revived", "Tunniit film (2010); revitalization projects"),
+        ],
+        "motifs": ["chin stripes (tunniit)", "V on the brow", "cheek fans", "sewn forearm rows"],
+        "images": [
+            {"file": "Tattooed Netsilik woman, by photographer Albert Peter Low.png",
+             "caption": "A tattooed Netsilik woman, photographed by Albert Peter Low, 1903–04.",
+             "credit": "Albert Peter Low — public domain"},
+            {"file": "Tätowierung Inuitfrau 1654.jpg",
+             "caption": "An Inuit woman with facial tattoos, painted in 1654 — the earliest European portrait of Inuit people.",
+             "credit": "Unknown artist, 1654 — public domain"},
+            {"file": "Portrait of an Inuit woman, 1945, by Henry Busse.png",
+             "caption": "Portrait of an Inuit woman with chin tattoos, 1945. Photo: Henry Busse.",
+             "credit": "Henry Busse — public domain"},
+            {"file": "FMIB 46504 Tattooed Woman of St Lawrence Island.jpeg",
+             "caption": "Tattooed woman of Saint Lawrence Island, c. 1900.",
+             "credit": "Public domain"},
+            {"file": "Portrait of Eskimo woman with chin tattoo wearing an elaborate fur parka, Alaska, between 1903 and 1908 (AL+CA 41).jpg",
+             "caption": "A woman with chin tattoo in an elaborate fur parka, Alaska, 1903–08.",
+             "credit": "Public domain"},
+            {"file": "FMIB 41406 Eskimo girl of coast of Northwest Alaska, showing tatoo marks on face.jpeg",
+             "caption": "A girl of the northwest Alaska coast with facial tattoo marks, c. 1900.",
+             "credit": "Public domain"},
+            {"file": "Higilaq showing her tattoos (51648).jpg",
+             "caption": "Higilaq showing her forearm tattoos.",
+             "credit": "Via Wikimedia Commons"},
+        ],
+    },
+    {
         "slug": "russia",
         "region": "Russia",
         "name": "Vory Tattoos",
@@ -754,6 +1019,48 @@ STYLES = [
              "credit": "Danzig Baldaev, via Wikimedia Commons"},
         ],
     },
+]
+
+# Pin positions (percent x, y) on the world chart, keyed by slug.
+# Base map: Wikimedia Commons BlankMap-World.svg. Tune by eye.
+MAP_PINS = {
+    "japan": (88.9, 36.0),
+    "new-zealand": (97.5, 87.0),
+    "samoa": (3.0, 69.0),
+    "marquesas": (11.3, 66.0),
+    "thailand": (77.9, 50.5),
+    "myanmar": (76.0, 45.5),
+    "usa": (29.4, 33.0),
+    "philippines": (83.6, 48.5),
+    "taiwan": (83.6, 44.0),
+    "north-africa": (48.0, 39.5),
+    "borneo": (81.7, 59.0),
+    "ainu": (89.7, 31.5),
+    "arctic": (24.2, 14.0),
+    "russia": (62.2, 23.0),
+}
+
+TIMELINE = [
+    ("c. 3300 BC", "Ötzi the Iceman is tattooed with 61 carbon marks over his joints — "
+                   "the oldest preserved tattoos on earth; the Gebelein mummies of Egypt "
+                   "carry the oldest figural ones."),
+    ("c. 500 BC", "The Pazyryk horsemen of the Altai are buried in permafrost with "
+                  "magnificent animal-style tattoos — griffins and deer still visible "
+                  "on their frozen skin."),
+    ("1769", "Joseph Banks writes down the Tahitian–Samoan word <em>tatau</em> on Cook's "
+             "first voyage, and 'tattoo' enters the world's languages."),
+    ("1858–1913", "The bans: France outlaws patu tiki in the Marquesas (1858), Meiji Japan "
+                  "outlaws irezumi (1872) and Ainu sinuye (1871), Japan's colonial "
+                  "government outlaws Atayal ptasan (1913)."),
+    ("1891", "Samuel O'Reilly patents the electric tattoo machine in New York, and the "
+             "flash-sheet era of American traditional begins."),
+    ("1948", "Japan legalises tattooing again; the same decade, Norman 'Sailor Jerry' "
+             "Collins fuses American line with Japanese composition in Honolulu."),
+    ("1961–1997", "New York City bans tattooing outright; the craft moves to back rooms "
+                  "until the ban falls."),
+    ("1980s–now", "The revivals: tā moko returns with the Māori renaissance, patu tiki is "
+                  "re-learned from von den Steinen's plates, Buscalan's batok passes to a "
+                  "new generation, and Inuit women sew kakiniit again."),
 ]
 
 # ------------------------------------------------------------------ assets ---
@@ -889,6 +1196,43 @@ aside.notes dd{margin:0}
 .motifs ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px}
 .motifs li{border:1.5px solid var(--ink-soft);padding:1px 9px;font-size:.9rem;font-style:italic;background:var(--paper)}
 
+/* expedition chart */
+.chart-wrap{max-width:1000px;margin:10px auto 26px;padding:0 20px}
+.chart{position:relative;border:var(--frame);background:var(--paper-deep);padding:14px;
+  box-shadow:0 0 0 1px var(--paper),0 0 0 2px var(--ink),7px 8px 0 rgba(36,27,18,.28)}
+.chart-inner{position:relative;border:2px solid var(--ink);overflow:hidden;background:#e4d6ae}
+.chart-inner>img{width:100%;display:block;filter:sepia(.55) saturate(.55) contrast(.92) brightness(1.06);opacity:.85}
+.chart-title{position:absolute;top:10px;left:50%;transform:translateX(-50%);z-index:3;
+  background:var(--paper);border:2px solid var(--ink);padding:3px 16px;white-space:nowrap;
+  font-family:"Rye",serif;font-size:clamp(.8rem,2.4vw,1.15rem);color:var(--ink)}
+.chart svg.route{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.chart svg.route polyline{fill:none;stroke:var(--oxblood);stroke-width:.45;stroke-dasharray:1.4 1.2;opacity:.85}
+.pin{position:absolute;z-index:2;width:24px;height:24px;margin:-12px 0 0 -12px;display:flex;align-items:center;justify-content:center;
+  background:var(--oxblood);color:var(--paper);text-decoration:none;transform:rotate(45deg);
+  border:2px solid var(--paper);box-shadow:0 0 0 1.5px var(--ink);
+  font-family:"IM Fell English SC",serif;font-size:.78rem;line-height:1}
+.pin span{transform:rotate(-45deg)}
+.pin:hover{background:var(--indigo);color:var(--paper)}
+.pin:hover::after{content:attr(data-name);position:absolute;top:-34px;left:50%;transform:rotate(-45deg) translate(6px,-8px);
+  background:var(--ink);color:var(--paper);padding:2px 10px;white-space:nowrap;
+  font-family:"IM Fell English SC",serif;font-size:.85rem;z-index:5}
+.chart-note{text-align:center;font-style:italic;color:var(--ink-soft);margin-top:10px;font-size:.95rem}
+@media(max-width:620px){.pin{width:18px;height:18px;margin:-9px 0 0 -9px;font-size:.62rem}}
+
+/* timeline of ink */
+.timeline{max-width:720px;margin:0 auto;padding:16px 20px 60px}
+.timeline h2{text-align:center;font-family:"Rye",serif;font-weight:400;font-size:1.7rem;margin-bottom:6px}
+.timeline .tl-note{text-align:center;font-style:italic;color:var(--ink-soft);margin-bottom:30px}
+.tl{list-style:none;border-left:3px double var(--ink);margin-left:86px;padding:4px 0}
+.tl li{position:relative;padding:0 0 22px 26px}
+.tl li:last-child{padding-bottom:4px}
+.tl li::before{content:"";position:absolute;left:-7px;top:7px;width:9px;height:9px;background:var(--oxblood);transform:rotate(45deg);outline:2px solid var(--paper)}
+.tl .year{position:absolute;left:-112px;top:0;width:82px;text-align:right;
+  font-family:"IM Fell English SC",serif;color:var(--oxblood);font-size:1.02rem}
+.tl .what{font-size:1.02rem;line-height:1.5}
+@media(max-width:560px){.tl{margin-left:0;border-left:none}.tl li{padding-left:0;padding-bottom:18px}
+ .tl li::before{display:none}.tl .year{position:static;display:block;width:auto;text-align:left}}
+
 /* gallery — masonry of pinned plates */
 .gallery{padding:26px 0 56px}
 .gallery h2{text-align:center;font-family:"Rye",serif;font-weight:400;font-size:1.6rem;margin-bottom:6px}
@@ -992,6 +1336,29 @@ def build_index() -> str:
     frieze = "".join(
         f'<span class="shot"><img src="{commons(img["file"], 360)}" alt="" loading="lazy"></span>'
         for img in frieze_picks[:7])
+    pins = "".join(
+        f'<a class="pin" href="styles/{s["slug"]}.html" style="left:{MAP_PINS[s["slug"]][0]}%;top:{MAP_PINS[s["slug"]][1]}%"'
+        f' data-name="{s["name"]} · {s["region"]}" aria-label="{s["name"]}, {s["region"]}"><span>{i + 1}</span></a>'
+        for i, s in enumerate(STYLES))
+    route_pts = " ".join(f'{MAP_PINS[s["slug"]][0]},{MAP_PINS[s["slug"]][1]}' for s in STYLES)
+    chart = f"""<section class="chart-wrap" id="chart">
+<div class="chart">
+<div class="chart-inner">
+<img src="{commons('BlankMap-World.svg', 1600)}" alt="World map with the atlas's fourteen tattoo traditions marked">
+<svg class="route" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline points="{route_pts}"/></svg>
+{pins}
+</div>
+<p class="chart-title">The Voyage of the Needle</p>
+</div>
+<p class="chart-note">Fourteen ports of call — follow the dashed line, or step on any marker.</p>
+</section>"""
+    tl_items = "".join(
+        f'<li><span class="year">{y}</span><span class="what">{w}</span></li>' for y, w in TIMELINE)
+    timeline = f"""<section class="timeline" id="timeline">
+<h2>Five Thousand Years of Ink</h2>
+<p class="tl-note">A short chronology of marks, bans and returns.</p>
+<ul class="tl">{tl_items}</ul>
+</section>"""
     page = HEAD.format(title=SITE, root="", v=VERSION,
                        desc="An illustrated atlas of the world's tattoo traditions — from Japanese irezumi to Samoan tatau.")
     page += masthead("")
@@ -999,7 +1366,7 @@ def build_index() -> str:
 {SWALLOW_L}{SWALLOW_R}
 <p class="over">An illustrated atlas of ink on skin</p>
 <h1>Tattoo<span class="of">— of the —</span>World</h1>
-<p class="sub">Ten living traditions, from the hand-carved moko of Aotearoa to the
+<p class="sub">{len(STYLES)} living traditions, from the hand-carved moko of Aotearoa to the
 flash sheets of American ports — their tools, their meanings, and the people who keep them.</p>
 <span class="est">Ink on skin since c. 3300 BC</span>
 </section>
@@ -1007,13 +1374,16 @@ flash sheets of American ports — their tools, their meanings, and the people w
 {frieze}
 </div>
 {DIVIDER}
+{chart}
 <section class="sheet wrap" id="sheet">
 <h2 class="sheet-title">The Flash Sheet</h2>
-<p class="sheet-note">Ten traditions, {total} plates from the archive — pick a design off the wall, every one opens into its own story.</p>
+<p class="sheet-note">{len(STYLES)} traditions, {total} plates from the archive — pick a design off the wall, every one opens into its own story.</p>
 <div class="grid">
 {''.join(cards)}
 </div>
 </section>
+{DIVIDER}
+{timeline}
 """
     page += footer("")
     return page
