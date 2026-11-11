@@ -11,7 +11,8 @@ import urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "Tattoo of the World"
-VERSION = "3"  # bump when assets/style.css changes, to bust browser caches
+BASE_URL = "https://dmitrylelee.github.io/tattooftheworld/"
+VERSION = "4"  # bump when assets/style.css changes, to bust browser caches
 
 
 def commons(filename: str, width: int = 1000) -> str:
@@ -27,6 +28,75 @@ def commons_page(filename: str) -> str:
 # ---------------------------------------------------------------- content ---
 
 STYLES = [
+    {
+        "slug": "pazyryk",
+        "region": "Altai · Siberia",
+        "name": "Pazyryk Ice Tattoos",
+        "native": "Pazyryk culture · Scythian animal style",
+        "card": "Griffins and deer frozen into skin 2,400 years ago — the oldest figural tattoos we can still see.",
+        "lede": ("In 1948 archaeologists thawing a frozen tomb in the Altai mountains "
+                 "found a chieftain whose skin still carried its ink: leaping deer, "
+                 "griffins and tigers, tattooed four centuries before our era."),
+        "paragraphs": [
+            ("The Pazyryk culture — horse nomads of the Scythian world, who buried "
+             "their dead in log chambers under stone mounds in the high Altai — left "
+             "us something almost no ancient people did: their actual tattooed skin. "
+             "Water seeped into the tombs and froze, and the permafrost held the "
+             "bodies for two and a half thousand years. The chief from kurgan 2, "
+             "excavated by Sergei Rudenko in 1948, wears a full sleeve; the woman "
+             "known as the Ukok 'Ice Maiden', found in 1993, carries a deer with "
+             "griffin's beak and flowering antlers on her shoulder."),
+            ("The designs are the famous Scythian animal style, the same bestiary "
+             "that gallops across the culture's felt, leather and gold: deer with "
+             "antlers streaming into birds' heads, predators twisting to bite, "
+             "mountain rams, a donkey, a griffin. Animals of prey and animals of "
+             "flight, caught mid-transformation — scholars read them as marks of "
+             "rank, clan and spiritual power, the biography of a warrior "
+             "aristocracy written in motion."),
+            ("Technique can still be studied from the skin itself: the lines were "
+             "pricked with needles and rubbed with soot, and the placement repeats "
+             "from body to body — shoulders and arms first, thumbs for later "
+             "marks — suggesting a codified system rather than decoration. "
+             "Herodotus, writing of the Scythians' neighbours, noted that tattoos "
+             "distinguished the noble from the base; the frozen tombs made the "
+             "remark archaeology."),
+            ("The Pazyryk ink is the reason this atlas can say 'five thousand "
+             "years' with a straight face: together with Ötzi's carbon marks and "
+             "Egypt's figural mummy tattoos, it proves tattooing is not a modern "
+             "fashion with ancient rumours behind it, but one of the oldest "
+             "continuous arts of our species. The Hermitage keeps the chief; the "
+             "Ice Maiden rests in the Altai Republic's national museum, where her "
+             "deer still leaps."),
+        ],
+        "facts": [
+            ("Where", "Pazyryk valley & Ukok plateau, Altai"),
+            ("When", "5th–3rd century BC"),
+            ("Found", "Rudenko's digs, 1948; Ukok, 1993"),
+            ("Style", "Scythian animal style"),
+            ("Kept at", "Hermitage; Anokhin museum, Altai"),
+        ],
+        "motifs": ["leaping deer", "griffin", "tiger & predators", "mountain ram", "antlers becoming birds"],
+        "images": [
+            {"file": "Pazyryk-2 tattoos.png",
+             "caption": "The tattoos of the Pazyryk-2 chieftain, c. 300 BC, mapped onto the body.",
+             "credit": "Reconstruction: Pataliputra!/Madhero88 — CC BY-SA 4.0"},
+            {"file": "Pazyryk-5 tattoos.png",
+             "caption": "Tattoos of the Pazyryk-5 burial, mapped from the preserved skin.",
+             "credit": "Reconstruction — CC BY-SA 4.0"},
+            {"file": "Pazyryk-2 man, back and left arm (circa 300 BCE).jpg",
+             "caption": "The preserved skin itself: back and left arm of the Pazyryk-2 man, c. 300 BC.",
+             "credit": "Via Wikimedia Commons"},
+            {"file": "Pazyryk griffon tattoo.png",
+             "caption": "Griffin tattoo from the Pazyryk burials.",
+             "credit": "Via Wikimedia Commons"},
+            {"file": "Pazyryk tiger tattoo.png",
+             "caption": "Tiger tattoo from the Pazyryk burials.",
+             "credit": "Via Wikimedia Commons"},
+            {"file": "Tatoo motif on the arm of the Siberian Ice Maiden.png",
+             "caption": "The deer with griffin's beak on the arm of the Ukok 'Ice Maiden'.",
+             "credit": "Via Wikimedia Commons"},
+        ],
+    },
     {
         "slug": "japan",
         "region": "Japan",
@@ -1024,6 +1094,7 @@ STYLES = [
 # Pin positions (percent x, y) on the world chart, keyed by slug.
 # Base map: Wikimedia Commons BlankMap-World.svg. Tune by eye.
 MAP_PINS = {
+    "pazyryk": (70.5, 24.0),
     "japan": (90.3, 33.0),
     "new-zealand": (96.2, 84.5),
     "samoa": (3.0, 69.0),
@@ -1279,6 +1350,18 @@ HEAD = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{desc}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tattoo of the World">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{desc}">
+<meta property="og:url" content="{url}">
+<meta property="og:image" content="https://dmitrylelee.github.io/tattooftheworld/assets/social-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{title}">
+<meta name="twitter:description" content="{desc}">
+<meta name="twitter:image" content="https://dmitrylelee.github.io/tattooftheworld/assets/social-card.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rye&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
@@ -1359,7 +1442,7 @@ def build_index() -> str:
 <p class="tl-note">A short chronology of marks, bans and returns.</p>
 <ul class="tl">{tl_items}</ul>
 </section>"""
-    page = HEAD.format(title=SITE, root="", v=VERSION,
+    page = HEAD.format(title=SITE, root="", v=VERSION, url=BASE_URL,
                        desc="An illustrated atlas of the world's tattoo traditions — from Japanese irezumi to Samoan tatau.")
     page += masthead("")
     page += f"""<section class="hero">
@@ -1399,7 +1482,7 @@ def build_style(i: int, s: dict) -> str:
     rest = s["images"][1:] if len(s["images"]) > 1 else s["images"]
     plates = "".join(fig(img) for img in rest)
     n_plates = len(s["images"])
-    page = HEAD.format(title=f"{s['name']} — {s['region']} · {SITE}", root="../", v=VERSION,
+    page = HEAD.format(title=f"{s['name']} — {s['region']} · {SITE}", root="../", v=VERSION, url=f"{BASE_URL}styles/{s['slug']}.html",
                        desc=html.escape(s["card"]))
     page += masthead("../")
     page += f"""<section class="poster">
@@ -1443,7 +1526,7 @@ def build_about() -> str:
             img_items.append(
                 f"<li><a href=\"{commons_page(img['file'])}\">{img['file']}</a> — {img['credit']} "
                 f"(used on <a href=\"styles/{s['slug']}.html\">{s['name']}</a>)</li>")
-    page = HEAD.format(title=f"About & credits · {SITE}", root="", v=VERSION,
+    page = HEAD.format(title=f"About & credits · {SITE}", root="", v=VERSION, url=BASE_URL + "about.html",
                        desc="About the project, image credits and licences.")
     page += masthead("")
     page += f"""<section class="poster">
