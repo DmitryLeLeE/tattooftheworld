@@ -1427,13 +1427,13 @@ def build_index() -> str:
     chart = f"""<section class="chart-wrap" id="chart">
 <div class="chart">
 <div class="chart-inner">
-<img src="{commons('BlankMap-World.svg', 1600)}" alt="World map with the atlas's fourteen tattoo traditions marked">
+<img src="{commons('BlankMap-World.svg', 1600)}" alt="World map with the atlas's tattoo traditions of this atlas marked">
 <svg class="route" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polyline points="{route_pts}"/></svg>
 {pins}
 </div>
 <p class="chart-title">The Voyage of the Needle</p>
 </div>
-<p class="chart-note">Fourteen ports of call — follow the dashed line, or step on any marker.</p>
+<p class="chart-note">{len(STYLES)} ports of call — follow the dashed line, or step on any marker.</p>
 </section>"""
     tl_items = "".join(
         f'<li><span class="year">{y}</span><span class="what">{w}</span></li>' for y, w in TIMELINE)
