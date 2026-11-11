@@ -1,0 +1,134 @@
+/* Tattoo of the World — vintage parlor stylesheet */
+:root{
+  --paper:#e8dbba; --paper-deep:#ddcc9e; --paper-dark:#cdb989;
+  --ink:#241b12; --ink-soft:#4a3c2a;
+  --oxblood:#8c2f26; --indigo:#2e4756; --ochre:#9c7021;
+  --frame:3px solid var(--ink);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  background:var(--paper);
+  background-image:
+    radial-gradient(ellipse at 50% 0%, rgba(255,250,230,.5), rgba(0,0,0,0) 60%),
+    radial-gradient(ellipse at 50% 100%, rgba(120,90,40,.18), rgba(0,0,0,0) 55%);
+  color:var(--ink);
+  font-family:"IM Fell English",Georgia,serif;
+  font-size:1.1rem; line-height:1.65;
+}
+body::after{/* paper grain */
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:999;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");
+}
+a{color:var(--oxblood)}
+a:hover{color:var(--indigo)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--oxblood);outline-offset:2px}
+img{max-width:100%;display:block}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+
+/* small caps label */
+.sc{font-family:"IM Fell English SC",Georgia,serif;letter-spacing:.08em}
+
+/* header / nav */
+.masthead{border-bottom:var(--frame);background:rgba(221,204,158,.6)}
+.masthead .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 20px;flex-wrap:wrap}
+.brand{font-family:"Rye",serif;font-size:1.25rem;color:var(--ink);text-decoration:none}
+.brand:hover{color:var(--oxblood)}
+nav.crumbs{display:flex;gap:18px;flex-wrap:wrap}
+nav.crumbs a{text-decoration:none;font-family:"IM Fell English SC",serif;font-size:1.05rem}
+
+/* hero */
+.hero{text-align:center;padding:64px 20px 36px;position:relative;overflow:hidden}
+.hero .over{font-family:"IM Fell English SC",serif;font-size:1.2rem;letter-spacing:.14em;color:var(--ink-soft)}
+.hero h1{
+  font-family:"Rye",serif;font-weight:400;color:var(--ink);
+  font-size:clamp(2.6rem,9vw,6.2rem);line-height:.95;margin:.18em 0 .1em;
+  text-shadow:3px 3px 0 var(--paper-dark);
+}
+.hero h1 .of{display:block;font-size:.38em;letter-spacing:.3em;color:var(--oxblood);text-shadow:none;margin:.5em 0 .3em}
+.hero .sub{max-width:52ch;margin:14px auto 0;font-style:italic;color:var(--ink-soft);font-size:1.15rem}
+.hero .est{margin-top:20px;display:inline-block;border:2px solid var(--oxblood);color:var(--oxblood);
+  padding:4px 18px;font-family:"IM Fell English SC",serif;letter-spacing:.12em;transform:rotate(-1.4deg)}
+.swallow{position:absolute;width:110px;color:var(--indigo);opacity:.9;top:70px}
+.swallow-l{left:max(12px,8vw)}
+.swallow-r{right:max(12px,8vw);transform:scaleX(-1)}
+@media(max-width:760px){.swallow{width:64px;top:30px;opacity:.55}}
+
+/* divider ornament */
+.divider{display:flex;align-items:center;gap:12px;max-width:520px;margin:30px auto;color:var(--oxblood)}
+.divider .rule{flex:1;height:0;border-top:2px solid currentColor;position:relative}
+.divider .rule::after{content:"";position:absolute;left:0;right:0;top:2px;border-top:1px solid currentColor}
+.div-mark{width:44px;flex:none}
+
+/* flash-sheet grid */
+.sheet{padding:10px 0 70px}
+.sheet-title{text-align:center;font-family:"Rye",serif;font-weight:400;font-size:1.7rem;margin-bottom:8px}
+.sheet-note{text-align:center;font-style:italic;color:var(--ink-soft);margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:30px}
+.card{
+  position:relative;text-decoration:none;color:var(--ink);background:var(--paper-deep);
+  border:var(--frame);box-shadow:0 0 0 1px var(--paper),0 0 0 2px var(--ink),6px 7px 0 rgba(36,27,18,.28);
+  padding:12px;display:flex;flex-direction:column;
+}
+.card:hover{background:#e3d4ab}
+.card:hover .card-name{color:var(--oxblood)}
+.card .ph{border:2px solid var(--ink);overflow:hidden;aspect-ratio:4/5;background:var(--paper-dark)}
+.card .ph img{width:100%;height:100%;object-fit:cover;filter:sepia(.35) saturate(.75) contrast(1.05)}
+.card-region{margin-top:12px;font-family:"IM Fell English SC",serif;font-size:.98rem;color:var(--indigo);letter-spacing:.1em}
+.card-name{font-family:"Rye",serif;font-size:1.45rem;line-height:1.15;margin:2px 0 6px}
+.card-blurb{font-size:.98rem;font-style:italic;color:var(--ink-soft);line-height:1.45}
+.card .corner{position:absolute;width:9px;height:9px;background:var(--oxblood);transform:rotate(45deg)}
+.card .c1{top:-5px;left:-5px}.card .c2{top:-5px;right:-5px}.card .c3{bottom:-5px;left:-5px}.card .c4{bottom:-5px;right:-5px}
+
+/* style page */
+.poster{border-bottom:var(--frame);text-align:center;padding:46px 20px 30px}
+.poster .region{font-family:"IM Fell English SC",serif;color:var(--indigo);font-size:1.15rem;letter-spacing:.14em}
+.poster h1{font-family:"Rye",serif;font-weight:400;font-size:clamp(2.2rem,7vw,4.2rem);margin:.1em 0;text-shadow:2px 2px 0 var(--paper-dark)}
+.poster .native{font-style:italic;color:var(--oxblood);font-size:1.15rem}
+.lede{max-width:56ch;margin:26px auto 0;font-size:1.3rem;font-style:italic;line-height:1.55;color:var(--ink-soft)}
+
+.article{display:grid;grid-template-columns:minmax(0,65ch) 240px;gap:48px;justify-content:center;padding:44px 0 10px}
+@media(max-width:900px){.article{grid-template-columns:minmax(0,65ch);justify-content:center}}
+.article .body p{margin-bottom:1.2em}
+.article .body p:first-of-type::first-letter{
+  font-family:"Rye",serif;font-size:3.1em;float:left;line-height:.82;padding:.06em .12em 0 0;color:var(--oxblood);
+}
+aside.notes{border:var(--frame);background:var(--paper-deep);padding:18px;height:fit-content;
+  box-shadow:4px 5px 0 rgba(36,27,18,.25)}
+aside.notes h2{font-family:"Rye",serif;font-weight:400;font-size:1.15rem;margin-bottom:12px;color:var(--oxblood)}
+aside.notes dl{font-size:.98rem}
+aside.notes dt{font-family:"IM Fell English SC",serif;color:var(--indigo);margin-top:10px}
+aside.notes dd{margin:0}
+.motifs{margin-top:16px;border-top:2px solid var(--ink);padding-top:12px}
+.motifs h2{font-family:"Rye",serif;font-weight:400;font-size:1.15rem;color:var(--oxblood);margin-bottom:8px}
+.motifs ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.motifs li{border:1.5px solid var(--ink-soft);padding:1px 9px;font-size:.9rem;font-style:italic;background:var(--paper)}
+
+/* gallery */
+.gallery{padding:26px 0 56px}
+.gallery h2{text-align:center;font-family:"Rye",serif;font-weight:400;font-size:1.6rem;margin-bottom:28px}
+.plates{display:flex;flex-wrap:wrap;gap:34px;justify-content:center}
+figure.plate{width:min(330px,100%);background:var(--paper-deep);border:var(--frame);padding:12px;
+  box-shadow:0 0 0 1px var(--paper),0 0 0 2px var(--ink),6px 7px 0 rgba(36,27,18,.28)}
+figure.plate img{border:2px solid var(--ink);width:100%;height:auto;filter:sepia(.3) saturate(.8) contrast(1.04);background:var(--paper-dark)}
+figure.plate figcaption{margin-top:10px;font-size:.92rem;line-height:1.45}
+figure.plate .credit{display:block;margin-top:6px;font-family:"IM Fell English SC",serif;font-size:.85rem;color:var(--ink-soft)}
+
+/* prev-next */
+.voyage{border-top:var(--frame);display:flex;justify-content:space-between;gap:16px;padding:22px 0 60px;flex-wrap:wrap}
+.voyage a{text-decoration:none;font-family:"IM Fell English SC",serif;font-size:1.1rem}
+.voyage .dest{display:block;font-family:"Rye",serif;font-size:1.3rem;color:var(--ink)}
+.voyage a:hover .dest{color:var(--oxblood)}
+
+/* about page */
+.credits{max-width:65ch;margin:0 auto;padding:40px 0 60px}
+.credits h2{font-family:"Rye",serif;font-weight:400;font-size:1.5rem;margin:30px 0 12px;color:var(--oxblood)}
+.credits p{margin-bottom:1em}
+.credits ul{margin:0 0 1em 1.2em}
+.credits li{margin-bottom:.5em}
+
+/* footer */
+footer{border-top:var(--frame);background:rgba(221,204,158,.6)}
+footer .wrap{padding:26px 20px;text-align:center;font-size:.95rem;color:var(--ink-soft)}
+footer .foot-brand{font-family:"Rye",serif;color:var(--ink);font-size:1.05rem}
